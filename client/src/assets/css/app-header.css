@@ -1,0 +1,200 @@
+header {
+  
+  display: flex;
+  padding: 1em;
+  gap: 1em;
+  justify-content: space-evenly;
+}
+
+.logo-container{
+
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap:0.5em;
+
+}
+
+.text-logo {
+  font-family: var(--title-font-family);
+  font-style: normal;
+font-weight: 400;
+font-size: 45px;
+line-height: 56px;
+
+color: #D5E35B;
+}
+
+
+.search-container{
+
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+ Padding:.55m em;
+ gap:  0.5 em;
+
+ padding: .55em;
+  background: rgba(217, 217, 217, 0.53);
+  
+    
+  
+border:0;
+border-radius: 10px;
+font-weight: 400;
+
+}
+
+.search-bar {
+  /*padding: .55em;*/
+  background: transparent;
+  
+  
+  
+border:0;
+border-radius: 20px;
+font-weight: 400;
+    font-size: 15px;
+    line-height: 5px;
+    /* identical to box height */
+
+   color: rgb(255, 255, 255);
+
+}
+
+.icon-button {
+    background-color:transparent;
+    border: none;
+    border-radius: 10%;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    padding: 1em;
+    
+}
+
+
+
+.icon-button:hover {
+  text-shadow: rgb(244, 243, 240) 1px 0 10px;
+}
+
+.icon-button i {
+    color: #fff;
+    font-size: 20px;
+    padding: 10em;
+}
+
+.container-search{
+   padding-left: .25em;
+}
+
+.icon-button-search {
+  background-color:transparent;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 0.3s ease;
+  
+}
+
+
+
+.icon-button-search:hover {
+text-shadow: rgb(244, 243, 240) 1px 0 10px;
+}
+
+.icon-button-search i {
+  color: #fff;
+  font-size: 20px;
+}
+
+
+
+
+
+.badge{
+
+  font-weight: 400;
+    font-size: 20px;
+    
+    /* identical to box height */
+
+   color: rgb(255, 255, 255);
+
+}
+
+.home
+{
+
+  background-color:transparent;
+    border: none;
+    border-radius: 10%;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  font-weight: 400;
+    font-size: 20px;
+    
+    /* identical to box height */
+
+   color: rgb(255, 255, 255);
+
+}
+
+.home:hover{
+
+  text-shadow: rgb(244, 243, 240) 1px 0 10px;
+
+}
+
+
+.search-box-button {
+  position: absolute;
+  width: 2rem;
+  height: 2.2rem;
+  left: 52.5rem;
+  top: 1.2rem;
+border:0;
+background:transparent;
+border-radius: 0px;
+cursor: hand;
+}
+
+.search-box-button  img {
+
+
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  
+
+font-family: 'Font Awesome 6 Free';
+font-style: normal;
+font-weight: 900;
+font-size: 43px;
+line-height: 23px;
+
+color: #EEE5F4;
+}
+
+
+
+

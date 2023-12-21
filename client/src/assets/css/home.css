@@ -1,0 +1,110 @@
+.home-page {
+  display: flex;
+
+  
+}
+
+.welcome-text {
+  width: 20em;
+  
+}
+
+
+.tile{
+
+  width: 195px;
+  height: 265px;
+  
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: #49556381;
+  
+
+}
+
+
+.category-image-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  
+  
+  
+}
+
+.category-image-items a {
+
+  text-align: center;
+  cursor: pointer;
+}
+
+.category-image-items p {
+  text-align: center;
+  line-height: 2;
+  
+  
+}
+
+.category-image-items div {
+  padding: 0.5em 0;
+  background: rgba(0, 0, 0, 0.485); /* last # is percent opacity */
+  color: white;
+  transform: translateY(-2.25em);
+  margin-bottom: -2em;
+}
+
+
+.button-start-shopping-box {
+
+  display: inline-block;
+  background: transparent;
+  border: 1 rem;
+  text-decoration: none;
+ 
+  cursor: pointer;
+  position: absolute;
+  
+  
+  background: #8F5498;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  /*border: #8F5498;
+  /* Note: backdrop-filter has minimal browser support */
+  
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  
+  
+  /* Inside auto layout */
+  
+  
+  }
+  
+  
+  .button-start-shopping-box-style{
+  /* Rectangle 6 */
+  
+  
+  
+  
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 6px;
+  
+  color: #FFFFFF;
+    padding: 10rem;
+  
+  }
+
+.button-start-shopping-box:hover{
+  text-shadow: rgb(244, 243, 240) 5px 0 10px;
+  background-color: rgba(143, 84, 152, 0.7);
+}
+
+
+
+  

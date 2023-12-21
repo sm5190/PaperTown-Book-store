@@ -1,0 +1,42 @@
+
+.confirmation_table {
+    border: 1px #ffffff solid;
+    width: fit-content;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.confirmation_td {
+    display: table-cell;
+    padding: 0.5em 0.5em;
+    background-color: rgba(96, 13, 98, 0.49);
+    vertical-align: middle;
+}
+
+.confirmation_tr:nth-child(even) > td {
+    background-color: rgba(169, 38, 158, 0.56);
+}
+
+.confirmation_td:nth-child(1) {
+    text-align: left;
+}
+
+.confirmation_td:nth-child(2) {
+    text-align: center;
+}
+
+.confirmation_td:nth-child(3) {
+    text-align: right;
+}
+
+.checkout-text {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom:20px;
+}
+.checkout-view {
+    dsiplay: flex;
+    flex-direction: column;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}

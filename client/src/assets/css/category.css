@@ -1,0 +1,110 @@
+.background-color{
+
+  background: #081E2F;
+}
+
+.category-page{
+  display : Flex;
+  flex-direction: row;
+  justify-content: center;
+  padding:.5rem;
+}
+
+.category-buttons {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: var(--neutral-color);
+}
+
+.button.selected-category-button {
+  background-color: var(--primary-color);
+}
+
+.button.unselected-category-button,
+.button.unselected-category-button:visited {
+  background-color: var(--neutral-color);
+}
+
+.button.unselected-category-button:hover,
+.button.unselected-category-button:active {
+  background-color: var(--primary-color);
+}
+
+
+
+
+
+.container-nav {
+
+  display:flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content:space-evenly;
+
+  align-items: flex-start;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  width:45vh;
+  height:60vh;
+
+
+
+
+
+
+
+}
+
+.items{
+
+
+  position: relative;
+  width: 125px;
+  height: 48px;
+
+
+
+  /* Rectangle 7 */
+
+
+
+  background: rgba(196, 215, 229, 0.21);
+
+
+
+
+}
+
+.items:hover{
+
+  background: #df89ed6d;
+}
+
+
+.item-selected{
+
+  background: #df89ed6d;
+}
+.styled-font{
+
+
+  position: absolute;
+  left: 20.4%;
+  right: 29.6%;
+  top: 25.33%;
+  bottom: 14.58%;
+
+  font-family: 'Yeon Sung';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #FFFFFF;}
+
+.active-link {
+  background: #df89ed6d;
+}
