@@ -15,3 +15,49 @@ PaperTown is a project that involves building a Bookstore web application using 
 •Web developers can work independently via the API
 •React Components are reusable
 •React Components are responsive
+# AWS Deployment Details  
+
+## Overview 
+This project has been successfully **migrated to AWS** to improve **scalability, performance, and security**. The entire infrastructure is hosted using **AWS services**, ensuring **high availability and fault tolerance**.  
+
+<img width="1000" height="1000" alt="Cloud_Architecture" src="https://github.com/user-attachments/assets/b788e082-44b4-45e4-a956-97e03b36c249" />
+
+
+### AWS Deployment Overview  
+- The **public subnet** hosts a **public EC2 instance (Tomcat Server)** that handles frontend and API requests.  
+- The **private subnet** hosts a **private EC2 instance (MySQL Database)** that securely communicates with the backend.  
+- **AWS Route 53** is used for DNS resolution, linking the domain **`cloudbookstore.biz`** to the **Elastic IP** of the public EC2 instance.  
+- A **NAT Gateway** allows the **private MySQL instance** to access the internet for security updates while remaining inaccessible from the outside world.  
+- **Security Groups** restrict access between components, allowing only necessary traffic.  
+
+---
+
+## AWS Services Used
+| **Component**      | **AWS Service Used** | **Purpose** |
+|--------------------|---------------------|-------------|
+| **Frontend**      | AWS S3 + CloudFront  | Hosts the **React.js frontend** with global CDN caching |
+| **Backend**       | AWS EC2 (Public Subnet) | Runs **Spring Boot & Tomcat**, accessible via Internet Gateway |
+| **Database**      | AWS EC2 (Private Subnet) | Hosts **MySQL**, accessible only by backend |
+| **Networking**    | AWS VPC, Subnets, NAT Gateway | Segments infrastructure for **security & controlled access** |
+| **Domain Name**   | AWS Route 53         | Links `cloudbookstore.biz` to **Elastic IP** of the public EC2 instance |
+| **Security**      | AWS Security Groups  | Restricts access between components |
+
+---
+
+## AWS Network Configuration 
+
+### Public Subnet (Frontend & API Server)
+- **EC2 (Tomcat Server) is deployed in the Public Subnet.**  
+- Exposed to the internet via an **Elastic IP & Internet Gateway**.  
+- Allows inbound traffic on **port 80/443 (HTTP/HTTPS)** for public access.  
+
+### Private Subnet (MySQL Database)
+- **EC2 (MySQL Database) is deployed in the Private Subnet** (No direct internet access).  
+- Only allows traffic **from the Public EC2 instance on port 3306 (MySQL)**.  
+- **NAT Gateway is configured** to allow outbound internet access (for security updates).  
+
+### AWS Route 53 - Domain & DNS
+- The domain **`cloudbookstore.biz`** is linked to the **Elastic IP of the Public EC2 instance**.  
+- Ensures that all API & frontend requests go through the **registered domain name** instead of a raw IP address.  
+
+---
